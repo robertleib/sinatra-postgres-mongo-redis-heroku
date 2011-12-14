@@ -1,0 +1,12 @@
+development:
+  adapter: 'postgresql'
+  database: 'sinatra_app_development'
+  host: 'localhost'
+  username: 'sinatra_app'
+  password: 'sinatra_app'
+
+production:
+  adapter: 'postgresql'
+  database: database
+  host: ENV['DATABASE_URL']
+  username: username

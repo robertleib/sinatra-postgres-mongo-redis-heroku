@@ -1,0 +1,101 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activemodel (3.0.9)
+      activesupport (= 3.0.9)
+      builder (~> 2.1.2)
+      i18n (~> 0.5.0)
+    activerecord (3.0.9)
+      activemodel (= 3.0.9)
+      activesupport (= 3.0.9)
+      arel (~> 2.0.10)
+      tzinfo (~> 0.3.23)
+    activesupport (3.0.9)
+    addressable (2.2.6)
+    arel (2.0.10)
+    bson (1.5.2)
+    bson_ext (1.5.2)
+      bson (= 1.5.2)
+    builder (2.1.2)
+    daemons (1.1.4)
+    dalli (1.1.4)
+    eventmachine (0.12.10)
+    heroku (2.16.1)
+      launchy (>= 0.3.2)
+      rest-client (~> 1.6.1)
+      rubyzip
+      term-ansicolor (~> 1.0.5)
+    i18n (0.5.0)
+    launchy (2.0.5)
+      addressable (~> 2.2.6)
+    mime-types (1.17.2)
+    mongo (1.5.2)
+      bson (= 1.5.2)
+    mongoid (2.2.4)
+      activemodel (~> 3.0)
+      mongo (~> 1.3)
+      tzinfo (~> 0.3.22)
+    multi_json (1.0.4)
+    multi_xml (0.4.1)
+    pg (0.12.0)
+      rake-compiler (~> 0.7)
+    rabl (0.3.0)
+      multi_json (~> 1.0.3)
+    rack (1.3.5)
+    rack-parser (0.1.2)
+      multi_json
+      multi_xml
+      rack
+    rack-protection (1.1.4)
+      rack
+    rack-throttle (0.3.0)
+      rack (>= 1.0.0)
+    rake (0.9.2.2)
+    rake-compiler (0.7.9)
+      rake
+    redis (2.2.2)
+    redis-namespace (1.0.3)
+      redis (< 3.0.0)
+    resque (1.19.0)
+      multi_json (~> 1.0)
+      redis-namespace (~> 1.0.2)
+      sinatra (>= 0.9.2)
+      vegas (~> 0.1.2)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    rubyzip (0.9.5)
+    sinatra (1.3.1)
+      rack (~> 1.3, >= 1.3.4)
+      rack-protection (~> 1.1, >= 1.1.2)
+      tilt (~> 1.3, >= 1.3.3)
+    sinatra-activerecord (0.1.3)
+      sinatra (>= 0.9.4)
+    term-ansicolor (1.0.7)
+    thin (1.3.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+    tilt (1.3.3)
+    tzinfo (0.3.29)
+    vegas (0.1.8)
+      rack (>= 1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activerecord
+  bson
+  bson_ext (~> 1.3)
+  dalli
+  heroku
+  mongoid
+  pg
+  rabl
+  rack-parser
+  rack-throttle
+  redis
+  resque
+  sinatra
+  sinatra-activerecord
+  thin
