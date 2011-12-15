@@ -2,3 +2,13 @@ This is a simple starter template for a Sinatra app ready to deploy to Heroku.
 
 To use:
 * pull down repo
+* rename app.rb and App class to whatever you want
+* heroku create --stack cedar
+
+This template uses MongoDB, PostgresSQL, Redis and Memcached all at the same, not because that is a good way to build an app, but so that each datastore is already setup and ready to go.
+
+That being said, to use the app as-is, you will need to install these Heroku add-ons:
+* Redis To Go
+* MongoLab
+* Memcache
+* Shared Database
